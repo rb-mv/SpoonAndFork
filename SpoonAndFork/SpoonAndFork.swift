@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+
+struct SpoonAndFork {
+    let id: Int
+    let name: String
+    let description: String
+}

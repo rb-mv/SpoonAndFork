@@ -11,7 +11,7 @@ import SwiftUI
 struct SpoonAndForkApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SpoonAndForkTabView()
         }
     }
 }

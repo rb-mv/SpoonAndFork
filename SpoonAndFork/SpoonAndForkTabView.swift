@@ -9,13 +9,24 @@ import SwiftUI
 
 struct SpoonAndForkTabView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            SpoonAndForkListView()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
+            AccountView()
+                .tabItem {
+                    Image(systemName: "person.crop.circle")
+                    Text("Account")
+                }
+            OrderView()
+                .tabItem {
+                    Image(systemName: "bag")
+                    Text("Order")
+                }
         }
-        .padding()
+        .accentColor(Color("brandPrimary"))
     }
 }
 
