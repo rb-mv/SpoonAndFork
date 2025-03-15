@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SpoonAndForkListView: View {
+struct MealsListView: View {
     var body: some View {
         NavigationView {
             Text("List view")
@@ -17,5 +17,5 @@ struct SpoonAndForkListView: View {
 }
 
 #Preview {
-    SpoonAndForkListView()
+    MealsListView()
 }
