@@ -10,7 +10,7 @@ import SwiftUI
 struct SpoonAndForkTabView: View {
     var body: some View {
         TabView {
-            SpoonAndForkListView()
+            MealsListView()
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")
@@ -26,7 +26,7 @@ struct SpoonAndForkTabView: View {
                     Text("Order")
                 }
         }
-        .accentColor(Color("brandPrimary"))
+        .accentColor(.BrandPrimary)
     }
 }
 
